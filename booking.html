@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="bookingstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Hotel</h1>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Name" required><br>
+            <input type="tel" id="phone" placeholder="Phone Number" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <h>Date Of Birth</h>
+            <input type="date" id="dob" placeholder="dob" required><br>
+            <h>Check In</h>
+            <input type="date" id="checkIn" placeholder="Check-in Date" required><br>
+            <h>Check Out</h>
+            <input type="date" id="checkOut" placeholder="Check-out Date" required><br>
+            <input type="number" id="accompanying" placeholder="Number of Accompanying People" required><br>
+            <select id="roomClass" required>
+                <option value="" disabled selected>Select Room Class</option>
+                <option value="Deluxe Ocean View">Deluxe Ocean View</option>
+                <option value="Executive Cityscape Room">Executive Cityscape Room</option>
+                <option value="Family Garden Retreat">Family Garden Retreat</option>
+            </select><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <script src="bookingscript.js"></script>
+</body>
+</html>
