@@ -9,10 +9,6 @@ function validateForm() {
     var roomClass = document.getElementById('roomClass').value;
     var book=document.getElementById("book111");
     
-    book.onclick=()=>{
-        window.location.href='./login.html';
-        console.log("Hello World");
-    }
 
     // Basic validation, you can add more complex validation as per requirement
     if (name == "" || phone == "" || email == "" || dob == "" || checkIn == "" || checkOut == "" || accompanying == "" || roomClass == "") {
@@ -25,4 +21,4 @@ function validateForm() {
     return true;
 }
 alert("Page is being redirected to payment page...");
-window.location.href = "file:///E:/temp/payment.html"
+window.location.href = "./payment.html";
